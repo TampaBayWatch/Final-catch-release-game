@@ -40,10 +40,32 @@ function getToday() {
     });
 }
 
+// Format release dates (remove time)
+function formatReleaseDate(dateString) {
+    if (!dateString) return "";
+    const d = new Date(dateString);
+    if (isNaN(d)) return dateString.split(" ")[0]; 
+    return d.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    });
+}
+
 // Display fish
 function showFish(f) {
+
     // Species + Image
     document.getElementById("species").textContent = f.species;
+
+    // Show Wild Caught or Hatchery Fish
+    const originLabel = f.origin.toLowerCase().includes("hatch") ?
+        "HATCHERY FISH" : "WILD CAUGHT";
+
+    // Insert label below fish species
+    document.getElementById("species").innerHTML = 
+        `${f.species}<br><span style="font-size:22px; color:#0077aa; font-weight:bold;">${originLabel}</span>`;
+
     document.getElementById("fishImage").src = "images/" + f.fish_image;
 
     // Catch info with TODAY'S DATE
@@ -54,10 +76,10 @@ function showFish(f) {
         <b>Weight:</b> ${f.catch.weight_g} g (${f.catch.weight_lb} lbs)
     `;
 
-    // Hatchery-specific info
+    // Hatchery release info
     if (f.origin.toLowerCase().includes("hatch")) {
         document.getElementById("releaseInfo").innerHTML = `
-            <b>Release Date:</b> ${f.release.date}<br>
+            <b>Release Date:</b> ${formatReleaseDate(f.release.date)}<br>
             <b>Release Location:</b> ${f.release.location}<br>
             <b>Release Length:</b> ${f.release.length_mm} mm (${f.release.length_in} in)<br>
             <b>Release Weight:</b> ${f.release.weight_g} g
