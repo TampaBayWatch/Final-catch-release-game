@@ -1,0 +1,632 @@
+[
+  {
+    "id": 1,
+    "species": "Snook",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Little Bayou",
+      "lat": "",
+      "lon": "",
+      "length_mm": 750,
+      "length_in": 29.53,
+      "weight_g": 13607.8,
+      "weight_lb": 30.0
+    },
+    "release": null,
+    "fish_image": "Snook.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 2,
+    "species": "Snook",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Mullet Key Bayou",
+      "lat": "",
+      "lon": "",
+      "length_mm": 460,
+      "length_in": 18.11,
+      "weight_g": 5443.1,
+      "weight_lb": 12.0
+    },
+    "release": null,
+    "fish_image": "Snook.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 3,
+    "species": "Snook",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Pinellas Bayway (SR 679) Bridge (Tierra Verde)",
+      "lat": "",
+      "lon": "",
+      "length_mm": 702,
+      "length_in": 27.64,
+      "weight_g": 12700.6,
+      "weight_lb": 28.0
+    },
+    "release": null,
+    "fish_image": "Snook.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 4,
+    "species": "Snook",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Alafia River",
+      "lat": "",
+      "lon": "",
+      "length_mm": 310,
+      "length_in": 12.2,
+      "weight_g": 4535.9,
+      "weight_lb": 10.0
+    },
+    "release": null,
+    "fish_image": "Snook.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 5,
+    "species": "Snook",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Little Manatee River",
+      "lat": "",
+      "lon": "",
+      "length_mm": 200,
+      "length_in": 7.87,
+      "weight_g": 3401.9,
+      "weight_lb": 7.5
+    },
+    "release": null,
+    "fish_image": "Snook.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 6,
+    "species": "Snook",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Tarpon Key",
+      "lat": "",
+      "lon": "",
+      "length_mm": 680,
+      "length_in": 26.77,
+      "weight_g": 12332.1,
+      "weight_lb": 27.18
+    },
+    "release": {
+      "date": "2023-03-10 00:00:00",
+      "location": "Shell Key Preserve",
+      "length_mm": 183.0,
+      "length_in": 7.2,
+      "weight_g": 65.0
+    },
+    "fish_image": "Snook.jpg",
+    "tag_type": "Acoustic ",
+    "tag_image": null
+  },
+  {
+    "id": 7,
+    "species": "Snook",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Bonne Fortune Key",
+      "lat": "",
+      "lon": "",
+      "length_mm": 720,
+      "length_in": 28.35,
+      "weight_g": 10228.3,
+      "weight_lb": 22.55
+    },
+    "release": {
+      "date": "2023-11-07 00:00:00",
+      "location": "Perico Bayou",
+      "length_mm": 200.0,
+      "length_in": 7.87,
+      "weight_g": 75.0
+    },
+    "fish_image": "Snook.jpg",
+    "tag_type": "PIT",
+    "tag_image": null
+  },
+  {
+    "id": 8,
+    "species": "Snook",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Grassy Point",
+      "lat": "",
+      "lon": "",
+      "length_mm": 500,
+      "length_in": 19.69,
+      "weight_g": 8133.3,
+      "weight_lb": 17.93
+    },
+    "release": {
+      "date": "2024-07-05 00:00:00",
+      "location": "Kitchen Key",
+      "length_mm": 178.0,
+      "length_in": 7.01,
+      "weight_g": 56.0
+    },
+    "fish_image": "Snook.jpg",
+    "tag_type": "PIT",
+    "tag_image": null
+  },
+  {
+    "id": 9,
+    "species": "Snook",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Big Bayou",
+      "lat": "",
+      "lon": "",
+      "length_mm": 560,
+      "length_in": 22.05,
+      "weight_g": 7324.8,
+      "weight_lb": 16.15
+    },
+    "release": {
+      "date": "2024-10-06 00:00:00",
+      "location": "Cockroach Bay",
+      "length_mm": 128.0,
+      "length_in": 5.04,
+      "weight_g": 15.0
+    },
+    "fish_image": "Snook.jpg",
+    "tag_type": "Fin Clip",
+    "tag_image": null
+  },
+  {
+    "id": 10,
+    "species": "Snook",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Sweetwater Creek",
+      "lat": "",
+      "lon": "",
+      "length_mm": 211,
+      "length_in": 8.31,
+      "weight_g": 3695.8,
+      "weight_lb": 8.15
+    },
+    "release": {
+      "date": "2025-10-11 00:00:00",
+      "location": "Little Manatee River",
+      "length_mm": 140.0,
+      "length_in": 5.51,
+      "weight_g": 26.0
+    },
+    "fish_image": "Snook.jpg",
+    "tag_type": "Streamer",
+    "tag_image": null
+  },
+  {
+    "id": 11,
+    "species": "Spotted Seatrout",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Mckay Bay",
+      "lat": "",
+      "lon": "",
+      "length_mm": 350,
+      "length_in": 13.78,
+      "weight_g": 480.0,
+      "weight_lb": 1.06
+    },
+    "release": null,
+    "fish_image": "Spotted seatrout.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 12,
+    "species": "Spotted Seatrout",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Mullet Key Bayou",
+      "lat": "",
+      "lon": "",
+      "length_mm": 230,
+      "length_in": 9.06,
+      "weight_g": 160.0,
+      "weight_lb": 0.35
+    },
+    "release": null,
+    "fish_image": "Spotted seatrout.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 13,
+    "species": "Spotted Seatrout",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Sweetwater Creek",
+      "lat": "",
+      "lon": "",
+      "length_mm": 600,
+      "length_in": 23.62,
+      "weight_g": 2450.0,
+      "weight_lb": 5.4
+    },
+    "release": null,
+    "fish_image": "Spotted seatrout.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 14,
+    "species": "Spotted Seatrout",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Palma Sola Bay",
+      "lat": "",
+      "lon": "",
+      "length_mm": 380,
+      "length_in": 14.96,
+      "weight_g": 610.0,
+      "weight_lb": 1.34
+    },
+    "release": null,
+    "fish_image": "Spotted seatrout.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 15,
+    "species": "Spotted Seatrout",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Terra Ceia Bay",
+      "lat": "",
+      "lon": "",
+      "length_mm": 500,
+      "length_in": 19.69,
+      "weight_g": 1400.0,
+      "weight_lb": 3.09
+    },
+    "release": null,
+    "fish_image": "Spotted seatrout.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 16,
+    "species": "Spotted Seatrout",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Mead Point",
+      "lat": "",
+      "lon": "",
+      "length_mm": 580,
+      "length_in": 22.83,
+      "weight_g": 2770.0,
+      "weight_lb": 6.1
+    },
+    "release": {
+      "date": "2023-01-31 00:00:00",
+      "location": "Double Branch Bay",
+      "length_mm": 118.0,
+      "length_in": 4.65,
+      "weight_g": 12.0
+    },
+    "fish_image": "Spotted seatrout.jpg",
+    "tag_type": "Streamer",
+    "tag_image": null
+  },
+  {
+    "id": 17,
+    "species": "Spotted Seatrout",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Anna Maria Sound",
+      "lat": "",
+      "lon": "",
+      "length_mm": 535,
+      "length_in": 21.06,
+      "weight_g": 1928.0,
+      "weight_lb": 4.25
+    },
+    "release": {
+      "date": "2023-07-14 00:00:00",
+      "location": "Weedon Island",
+      "length_mm": 135.0,
+      "length_in": 5.31,
+      "weight_g": 46.0
+    },
+    "fish_image": "Spotted seatrout.jpg",
+    "tag_type": "PIT",
+    "tag_image": null
+  },
+  {
+    "id": 18,
+    "species": "Spotted Seatrout",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Cockroach Bay",
+      "lat": "",
+      "lon": "",
+      "length_mm": 256,
+      "length_in": 10.08,
+      "weight_g": 627.8,
+      "weight_lb": 1.38
+    },
+    "release": {
+      "date": "2024-08-28 00:00:00",
+      "location": "Cockroach Bay",
+      "length_mm": 198.0,
+      "length_in": 7.8,
+      "weight_g": 98.0
+    },
+    "fish_image": "Spotted seatrout.jpg",
+    "tag_type": "PIT",
+    "tag_image": null
+  },
+  {
+    "id": 19,
+    "species": "Spotted Seatrout",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Picnic Island",
+      "lat": "",
+      "lon": "",
+      "length_mm": 200,
+      "length_in": 7.87,
+      "weight_g": 393.7,
+      "weight_lb": 0.87
+    },
+    "release": {
+      "date": "2024-12-01 00:00:00",
+      "location": "Kitchen Key",
+      "length_mm": 123.0,
+      "length_in": 4.84,
+      "weight_g": 23.0
+    },
+    "fish_image": "Spotted seatrout.jpg",
+    "tag_type": "Acoustic ",
+    "tag_image": null
+  },
+  {
+    "id": 20,
+    "species": "Spotted Seatrout",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Mckay Bay",
+      "lat": "",
+      "lon": "",
+      "length_mm": 173,
+      "length_in": 6.81,
+      "weight_g": 192.5,
+      "weight_lb": 0.42
+    },
+    "release": {
+      "date": "2025-05-12 00:00:00",
+      "location": "Perico Bayou",
+      "length_mm": 168.0,
+      "length_in": 6.61,
+      "weight_g": 68.0
+    },
+    "fish_image": "Spotted seatrout.jpg",
+    "tag_type": "Streamer",
+    "tag_image": null
+  },
+  {
+    "id": 21,
+    "species": "Red Drum",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Double Branch Bay",
+      "lat": "",
+      "lon": "",
+      "length_mm": 380,
+      "length_in": 14.96,
+      "weight_g": 540.0,
+      "weight_lb": 1.19
+    },
+    "release": null,
+    "fish_image": "Reddrum.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 22,
+    "species": "Red Drum",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Ballast Point",
+      "lat": "",
+      "lon": "",
+      "length_mm": 440,
+      "length_in": 17.32,
+      "weight_g": 830.0,
+      "weight_lb": 1.83
+    },
+    "release": null,
+    "fish_image": "Reddrum.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 23,
+    "species": "Red Drum",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Cooper Bayou",
+      "lat": "",
+      "lon": "",
+      "length_mm": 660,
+      "length_in": 25.98,
+      "weight_g": 2600.0,
+      "weight_lb": 5.73
+    },
+    "release": null,
+    "fish_image": "Reddrum.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 24,
+    "species": "Red Drum",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Terra Ceia Bay",
+      "lat": "",
+      "lon": "",
+      "length_mm": 510,
+      "length_in": 20.08,
+      "weight_g": 1300.0,
+      "weight_lb": 2.87
+    },
+    "release": null,
+    "fish_image": "Reddrum.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 25,
+    "species": "Red Drum",
+    "origin": "Wild caught",
+    "catch": {
+      "location": "Bonne Fortune Key",
+      "lat": "",
+      "lon": "",
+      "length_mm": 310,
+      "length_in": 12.2,
+      "weight_g": 330.0,
+      "weight_lb": 0.73
+    },
+    "release": null,
+    "fish_image": "Reddrum.jpg",
+    "tag_type": NaN,
+    "tag_image": null
+  },
+  {
+    "id": 26,
+    "species": "Red Drum",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Tarpon Key",
+      "lat": "",
+      "lon": "",
+      "length_mm": 370,
+      "length_in": 14.57,
+      "weight_g": 2988.8,
+      "weight_lb": 6.59
+    },
+    "release": {
+      "date": "2023-10-23 00:00:00",
+      "location": "Alafia River",
+      "length_mm": 111.0,
+      "length_in": 4.37,
+      "weight_g": 20.0
+    },
+    "fish_image": "Reddrum.jpg",
+    "tag_type": "Fin Clip",
+    "tag_image": null
+  },
+  {
+    "id": 27,
+    "species": "Red Drum",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Rattlesnake Key",
+      "lat": "",
+      "lon": "",
+      "length_mm": 420,
+      "length_in": 16.54,
+      "weight_g": 3990.5,
+      "weight_lb": 8.8
+    },
+    "release": {
+      "date": "2023-02-23 00:00:00",
+      "location": "Little Manatee River",
+      "length_mm": 156.0,
+      "length_in": 6.14,
+      "weight_g": 64.0
+    },
+    "fish_image": "Reddrum.jpg",
+    "tag_type": "PIT",
+    "tag_image": null
+  },
+  {
+    "id": 28,
+    "species": "Red Drum",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Big Bayou",
+      "lat": "",
+      "lon": "",
+      "length_mm": 230,
+      "length_in": 9.06,
+      "weight_g": 2111.2,
+      "weight_lb": 4.65
+    },
+    "release": {
+      "date": "2024-02-15 00:00:00",
+      "location": "Shell Key Preserve",
+      "length_mm": 139.0,
+      "length_in": 5.47,
+      "weight_g": 42.0
+    },
+    "fish_image": "Reddrum.jpg",
+    "tag_type": "PIT",
+    "tag_image": null
+  },
+  {
+    "id": 29,
+    "species": "Red Drum",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "Pinellas Bayway (SR 679) Bridge (Fort DeSoto)",
+      "lat": "",
+      "lon": "",
+      "length_mm": 203,
+      "length_in": 7.99,
+      "weight_g": 1825.5,
+      "weight_lb": 4.03
+    },
+    "release": {
+      "date": "2024-07-30 00:00:00",
+      "location": "Weedon Island",
+      "length_mm": 191.0,
+      "length_in": 7.52,
+      "weight_g": 120.0
+    },
+    "fish_image": "Reddrum.jpg",
+    "tag_type": "Streamer",
+    "tag_image": null
+  },
+  {
+    "id": 30,
+    "species": "Red Drum",
+    "origin": "Hatchery",
+    "catch": {
+      "location": "St. Petersburg Pier",
+      "lat": "",
+      "lon": "",
+      "length_mm": 170,
+      "length_in": 6.69,
+      "weight_g": 500.9,
+      "weight_lb": 1.1
+    },
+    "release": {
+      "date": "2025-02-15 00:00:00",
+      "location": "Ballast Point",
+      "length_mm": 102.0,
+      "length_in": 4.02,
+      "weight_g": 18.0
+    },
+    "fish_image": "Reddrum.jpg",
+    "tag_type": "PIT",
+    "tag_image": null
+  }
+]
