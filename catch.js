@@ -61,6 +61,9 @@ function formatReleaseDate(dateString) {
 // Display fish details
 function showFish(f) {
 
+    // Hide the title on fish screen
+    document.getElementById("titleHeader").style.display = "none";
+
     // Species Name
     document.getElementById("species").textContent = f.species;
 
@@ -93,10 +96,12 @@ function showFish(f) {
             <b>Release Weight:</b> ${f.release.weight_g} g
         `;
 
+        // Show tag image
         document.getElementById("tagImage").src = "images/" + f.release.tag_image;
         document.getElementById("tagImage").style.display = "block";
 
     } else {
+        // Hide release + tag info for wild fish
         document.getElementById("releaseInfo").innerHTML = "";
         document.getElementById("tagImage").style.display = "none";
     }
