@@ -3,8 +3,12 @@ let usedFish = [];
 
 // Load JSON file
 async function loadFish() {
-    let res = await fetch("fish.json");
-    fishData = await res.json();
+    try {
+        let res = await fetch("fish.json");
+        fishData = await res.json();
+    } catch (e) {
+        console.error("ERROR LOADING fish.json:", e);
+    }
 }
 
 // Fade helpers
@@ -18,10 +22,10 @@ function fadeOut(el, callback) {
     setTimeout(() => { el.style.display = "none"; callback(); }, 800);
 }
 
-// Random fish selection with no repeats
+// Choose random fish, no repeats until all used
 function pickFish() {
     if (usedFish.length === fishData.length) {
-        usedFish = []; // reset when all fish used
+        usedFish = [];
     }
 
     let remaining = fishData.filter(f => !usedFish.includes(f.id));
@@ -30,7 +34,7 @@ function pickFish() {
     return fish;
 }
 
-// Today's date for catch
+// Today's date (formatted)
 function getToday() {
     const d = new Date();
     return d.toLocaleDateString("en-US", {
@@ -40,12 +44,11 @@ function getToday() {
     });
 }
 
-// Format release dates (remove 00:00:00)
+// Format release dates (remove timestamp)
 function formatReleaseDate(dateString) {
     if (!dateString) return "";
     const d = new Date(dateString);
     if (isNaN(d)) {
-        // fallback: strip time manually if date is "2022-03-05 00:00:00"
         return dateString.split(" ")[0];
     }
     return d.toLocaleDateString("en-US", {
@@ -55,42 +58,45 @@ function formatReleaseDate(dateString) {
     });
 }
 
-// Display fish on screen
+// Display fish details
 function showFish(f) {
 
     // Species Name
     document.getElementById("species").textContent = f.species;
 
-    // Wild or Hatchery Label
+    // Wild or Hatchery label
     const originLabel = f.origin.toLowerCase().includes("hatch")
         ? "HATCHERY FISH"
         : "WILD CAUGHT";
+
     document.getElementById("originLabel").textContent = originLabel;
 
     // Fish Image
     document.getElementById("fishImage").src = "images/" + f.fish_image;
 
-    // Catch info
+    // Catch Info
     document.getElementById("catchInfo").innerHTML = `
         <b>Catch Date:</b> ${getToday()}<br>
-        <b>Catch Location:</b> ${f.catch.location} (${f.catch.lat}, ${f.catch.lon})<br>
+        <b>Catch Location:</b> ${f.catch.location}<br>
+        <b>Catch Coordinates:</b> ${f.catch.coords}<br>
         <b>Length:</b> ${f.catch.length_mm} mm (${f.catch.length_in} in)<br>
         <b>Weight:</b> ${f.catch.weight_g} g (${f.catch.weight_lb} lbs)
     `;
 
-    // Hatchery release info
+    // Release Info (for hatchery fish only)
     if (f.origin.toLowerCase().includes("hatch")) {
         document.getElementById("releaseInfo").innerHTML = `
             <b>Release Date:</b> ${formatReleaseDate(f.release.date)}<br>
             <b>Release Location:</b> ${f.release.location}<br>
+            <b>Release Coordinates:</b> ${f.release.coords}<br>
             <b>Release Length:</b> ${f.release.length_mm} mm (${f.release.length_in} in)<br>
             <b>Release Weight:</b> ${f.release.weight_g} g
         `;
-        document.getElementById("tagImage").src = "images/" + f.tag_image;
+
+        document.getElementById("tagImage").src = "images/" + f.release.tag_image;
         document.getElementById("tagImage").style.display = "block";
 
     } else {
-        // Wild fish → hide everything extra
         document.getElementById("releaseInfo").innerHTML = "";
         document.getElementById("tagImage").style.display = "none";
     }
