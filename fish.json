@@ -5,92 +5,109 @@
     "origin": "Wild caught",
     "fish_image": "Snook.jpg",
     "catch": {
-      "location": "Little Bayou",
-      "coords": "27\u00b043'08.2\"N 82\u00b037'43.2\"W",
-      "length_mm": 750,
-      "length_in": 29.53,
-      "weight_g": 13607.8,
-      "weight_lb": 30.0
-    }
-  },
-  {
-    "id": 2,
-    "species": "Snook",
-    "origin": "Wild caught",
-    "fish_image": "Snook.jpg",
-    "catch": {
-      "location": "Mullet Key Bayou",
-      "coords": "27\u00b038'01.7\"N 82\u00b043'44.7\"W",
-      "length_mm": 460,
-      "length_in": 18.11,
-      "weight_g": 5443.1,
-      "weight_lb": 12.0
-    }
-  },
-  {
-    "id": 3,
-    "species": "Snook",
-    "origin": "Wild caught",
-    "fish_image": "Snook.jpg",
-    "catch": {
-      "location": "Pinellas Bayway (SR 679) Bridge (Tierra Verde)",
-      "coords": "27\u00b041'36.7\"N 82\u00b043'02.6\"W",
-      "length_mm": 702,
-      "length_in": 27.64,
+      "location": "Fort De Soto",
+      "coords": "27.637905, -82.716246",
+      "length_mm": 604.0,
+      "length_in": 23.78,
       "weight_g": 12700.6,
       "weight_lb": 28.0
     }
   },
   {
+    "id": 2,
+    "species": "Red Drum",
+    "origin": "Wild caught",
+    "fish_image": "Reddrum.jpg",
+    "catch": {
+      "location": "Bunces Pass",
+      "coords": "27.623679, -82.726501",
+      "length_mm": 540.0,
+      "length_in": 21.26,
+      "weight_g": 9980.0,
+      "weight_lb": 22.0
+    }
+  },
+  {
+    "id": 3,
+    "species": "Spotted Seatrout",
+    "origin": "Wild caught",
+    "fish_image": "Spotted seatrout.jpg",
+    "catch": {
+      "location": "Shell Key",
+      "coords": "27.624599, -82.740435",
+      "length_mm": 450.0,
+      "length_in": 17.72,
+      "weight_g": 3200.0,
+      "weight_lb": 7.0
+    }
+  },
+  {
     "id": 4,
-    "species": "Snook",
-    "origin": "Wild caught",
-    "fish_image": "Snook.jpg",
-    "catch": {
-      "location": "Alafia River",
-      "coords": "27\u00b042'49.8\"N 82\u00b027'53.3\"W",
-      "length_mm": 310,
-      "length_in": 12.2,
-      "weight_g": 4535.9,
-      "weight_lb": 10.0
-    }
-  },
-  {
-    "id": 5,
-    "species": "Snook",
-    "origin": "Wild caught",
-    "fish_image": "Snook.jpg",
-    "catch": {
-      "location": "Little Manatee River",
-      "coords": "27\u00b042'49.8\"N 82\u00b027'53.3\"W",
-      "length_mm": 200,
-      "length_in": 7.87,
-      "weight_g": 3401.9,
-      "weight_lb": 7.5
-    }
-  },
-  {
-    "id": 6,
     "species": "Snook",
     "origin": "Hatchery",
     "fish_image": "Snook.jpg",
     "catch": {
-      "location": "Tarpon Key",
-      "coords": "27\u00b039'57.2\"N 82\u00b041'26.0\"W",
-      "length_mm": 680,
-      "length_in": 26.77,
-      "weight_g": 12332.1,
-      "weight_lb": 27.18
+      "location": "Pass-A-Grille",
+      "coords": "27.693027, -82.739099",
+      "length_mm": 480.0,
+      "length_in": 18.9,
+      "weight_g": 4000.0,
+      "weight_lb": 9.0
     },
     "release": {
-      "location": "Shell Key Preserve",
-      "coords": "27\u00b039'45.3\"N 82\u00b044'03.3\"W",
-      "date": "2023-03-10 00:00:00",
-      "length_mm": 183.0,
-      "length_in": 7.2,
-      "weight_g": 65.0,
-      "tag_type": "Acoustic ",
-      "tag_image": ""
+      "location": "Cockroach Bay",
+      "coords": "27.64122, -82.48228",
+      "date": "2023-06-22 00:00:00",
+      "length_mm": 220.0,
+      "length_in": 8.66,
+      "weight_g": 180.0,
+      "tag_image": "ACOUSTIC TAG Final .jpg"
+    }
+  },
+  {
+    "id": 5,
+    "species": "Red Drum",
+    "origin": "Hatchery",
+    "fish_image": "Reddrum.jpg",
+    "catch": {
+      "location": "Maximo Park",
+      "coords": "27.73125, -82.67945",
+      "length_mm": 600.0,
+      "length_in": 23.62,
+      "weight_g": 12000.0,
+      "weight_lb": 26.0
+    },
+    "release": {
+      "location": "Cockroach Bay",
+      "coords": "27.64122, -82.48228",
+      "date": "2023-05-18 00:00:00",
+      "length_mm": 210.0,
+      "length_in": 8.27,
+      "weight_g": 170.0,
+      "tag_image": "PIT TAG BLACK Final.jpg"
+    }
+  },
+  {
+    "id": 6,
+    "species": "Spotted Seatrout",
+    "origin": "Hatchery",
+    "fish_image": "Spotted seatrout.jpg",
+    "catch": {
+      "location": "Bay Vista Park",
+      "coords": "27.74176, -82.65409",
+      "length_mm": 380.0,
+      "length_in": 14.96,
+      "weight_g": 2100.0,
+      "weight_lb": 4.6
+    },
+    "release": {
+      "location": "Clam Bayou",
+      "coords": "27.74856, -82.68125",
+      "date": "2023-06-01 00:00:00",
+      "length_mm": 200.0,
+      "length_in": 7.87,
+      "weight_g": 160.0,
+      "tag_image": "FIN CLIP final.jpg"
     }
   },
   {
@@ -99,108 +116,77 @@
     "origin": "Hatchery",
     "fish_image": "Snook.jpg",
     "catch": {
-      "location": "Bonne Fortune Key",
-      "coords": "27\u00b038'18.8\"N 82\u00b042'21.0\"W",
-      "length_mm": 720,
-      "length_in": 28.35,
-      "weight_g": 10228.3,
-      "weight_lb": 22.55
+      "location": "Gandy Bridge",
+      "coords": "27.86840, -82.52100",
+      "length_mm": 520.0,
+      "length_in": 20.47,
+      "weight_g": 5200.0,
+      "weight_lb": 11.5
     },
     "release": {
-      "location": "Perico Bayou",
-      "coords": "27\u00b030'17.6\"N 82\u00b040'18.4\"W",
-      "date": "2023-11-07 00:00:00",
-      "length_mm": 200.0,
-      "length_in": 7.87,
-      "weight_g": 75.0,
-      "tag_type": "PIT",
-      "tag_image": ""
+      "location": "Weedin Island",
+      "coords": "27.84299, -82.60426",
+      "date": "2023-07-14 00:00:00",
+      "length_mm": 215.0,
+      "length_in": 8.46,
+      "weight_g": 165.0,
+      "tag_image": "STREAMER TAG.jpg"
     }
   },
   {
     "id": 8,
-    "species": "Snook",
-    "origin": "Hatchery",
-    "fish_image": "Snook.jpg",
+    "species": "Red Drum",
+    "origin": "Wild caught",
+    "fish_image": "Reddrum.jpg",
     "catch": {
-      "location": "Grassy Point",
-      "coords": "27\u00b054'20.9\"N 82\u00b038'51.8\"W",
-      "length_mm": 500,
-      "length_in": 19.69,
-      "weight_g": 8133.3,
-      "weight_lb": 17.93
-    },
-    "release": {
-      "location": "Kitchen Key",
-      "coords": "27\u00b036'28.8\"N 82\u00b034'15.4\"W",
-      "date": "2024-07-05 00:00:00",
-      "length_mm": 178.0,
-      "length_in": 7.01,
-      "weight_g": 56.0,
-      "tag_type": "PIT",
-      "tag_image": ""
+      "location": "Tierra Verde",
+      "coords": "27.69100, -82.72350",
+      "length_mm": 480.0,
+      "length_in": 18.9,
+      "weight_g": 5500.0,
+      "weight_lb": 12.1
     }
   },
   {
     "id": 9,
-    "species": "Snook",
-    "origin": "Hatchery",
-    "fish_image": "Snook.jpg",
+    "species": "Spotted Seatrout",
+    "origin": "Wild caught",
+    "fish_image": "Spotted seatrout.jpg",
     "catch": {
-      "location": "Big Bayou",
-      "coords": "27\u00b044'34.5\"N 82\u00b037'36.7\"W",
-      "length_mm": 560,
-      "length_in": 22.05,
-      "weight_g": 7324.8,
-      "weight_lb": 16.15
-    },
-    "release": {
-      "location": "Cockroach Bay",
-      "coords": "27\u00b042'39.3\"N 82\u00b029'57.7\"W",
-      "date": "2024-10-06 00:00:00",
-      "length_mm": 128.0,
-      "length_in": 5.04,
-      "weight_g": 15.0,
-      "tag_type": "Fin Clip",
-      "tag_image": ""
+      "location": "Boca Ciega Bay",
+      "coords": "27.76290, -82.73340",
+      "length_mm": 330.0,
+      "length_in": 12.99,
+      "weight_g": 1400.0,
+      "weight_lb": 3.1
     }
   },
   {
     "id": 10,
     "species": "Snook",
-    "origin": "Hatchery",
+    "origin": "Wild caught",
     "fish_image": "Snook.jpg",
     "catch": {
-      "location": "Sweetwater Creek",
-      "coords": "27\u00b058'29.3\"N 82\u00b034'25.1\"W",
-      "length_mm": 211,
-      "length_in": 8.31,
-      "weight_g": 3695.8,
-      "weight_lb": 8.15
-    },
-    "release": {
-      "location": "Little Manatee River",
-      "coords": "27\u00b042'49.8\"N 82\u00b027'53.3\"W",
-      "date": "2025-10-11 00:00:00",
-      "length_mm": 140.0,
-      "length_in": 5.51,
-      "weight_g": 26.0,
-      "tag_type": "Streamer",
-      "tag_image": ""
+      "location": "Anna Maria Island",
+      "coords": "27.52840, -82.73352",
+      "length_mm": 700.0,
+      "length_in": 27.56,
+      "weight_g": 15000.0,
+      "weight_lb": 33.0
     }
   },
   {
     "id": 11,
-    "species": "Spotted Seatrout",
+    "species": "Red Drum",
     "origin": "Wild caught",
-    "fish_image": "Spotted seatrout.jpg",
+    "fish_image": "Reddrum.jpg",
     "catch": {
-      "location": "Mckay Bay",
-      "coords": "27\u00b056'31.3\"N 82\u00b025'21.8\"W",
-      "length_mm": 350,
-      "length_in": 13.78,
-      "weight_g": 480.0,
-      "weight_lb": 1.06
+      "location": "Egmont Key",
+      "coords": "27.58640, -82.76200",
+      "length_mm": 450.0,
+      "length_in": 17.72,
+      "weight_g": 4200.0,
+      "weight_lb": 9.3
     }
   },
   {
@@ -209,202 +195,206 @@
     "origin": "Wild caught",
     "fish_image": "Spotted seatrout.jpg",
     "catch": {
-      "location": "Mullet Key Bayou",
-      "coords": "27\u00b038'01.7\"N 82\u00b043'44.7\"W",
-      "length_mm": 230,
-      "length_in": 9.06,
-      "weight_g": 160.0,
-      "weight_lb": 0.35
+      "location": "Sunshine Skyway",
+      "coords": "27.64000, -82.67320",
+      "length_mm": 500.0,
+      "length_in": 19.69,
+      "weight_g": 2600.0,
+      "weight_lb": 5.7
     }
   },
   {
     "id": 13,
-    "species": "Spotted Seatrout",
-    "origin": "Wild caught",
-    "fish_image": "Spotted seatrout.jpg",
+    "species": "Snook",
+    "origin": "Hatchery",
+    "fish_image": "Snook.jpg",
     "catch": {
-      "location": "Sweetwater Creek",
-      "coords": "27\u00b058'29.3\"N 82\u00b034'25.1\"W",
-      "length_mm": 600,
-      "length_in": 23.62,
-      "weight_g": 2450.0,
-      "weight_lb": 5.4
+      "location": "Demens Landing",
+      "coords": "27.76980, -82.63140",
+      "length_mm": 560.0,
+      "length_in": 22.05,
+      "weight_g": 6300.0,
+      "weight_lb": 13.9
+    },
+    "release": {
+      "location": "Coffee Pot Bayou",
+      "coords": "27.79850, -82.62140",
+      "date": "2023-08-04 00:00:00",
+      "length_mm": 225.0,
+      "length_in": 8.86,
+      "weight_g": 175.0,
+      "tag_image": "PIT TAG RED Final.jpg"
     }
   },
   {
     "id": 14,
-    "species": "Spotted Seatrout",
-    "origin": "Wild caught",
-    "fish_image": "Spotted seatrout.jpg",
+    "species": "Red Drum",
+    "origin": "Hatchery",
+    "fish_image": "Reddrum.jpg",
     "catch": {
-      "location": "Palma Sola Bay",
-      "coords": "27\u00b029'15.5\"N 82\u00b040'03.7\"W",
-      "length_mm": 380,
-      "length_in": 14.96,
-      "weight_g": 610.0,
-      "weight_lb": 1.34
+      "location": "Coquina Key",
+      "coords": "27.73940, -82.64050",
+      "length_mm": 530.0,
+      "length_in": 20.87,
+      "weight_g": 6800.0,
+      "weight_lb": 15.0
+    },
+    "release": {
+      "location": "Clam Bayou",
+      "coords": "27.74856, -82.68125",
+      "date": "2023-07-10 00:00:00",
+      "length_mm": 215.0,
+      "length_in": 8.46,
+      "weight_g": 165.0,
+      "tag_image": "STREAMER TAG.jpg"
     }
   },
   {
     "id": 15,
     "species": "Spotted Seatrout",
-    "origin": "Wild caught",
+    "origin": "Hatchery",
     "fish_image": "Spotted seatrout.jpg",
     "catch": {
-      "location": "Terra Ceia Bay",
-      "coords": "27\u00b032'52.9\"N 82\u00b035'53.1\"W",
-      "length_mm": 500,
-      "length_in": 19.69,
-      "weight_g": 1400.0,
-      "weight_lb": 3.09
+      "location": "Weedin Island Preserve",
+      "coords": "27.84299, -82.60426",
+      "length_mm": 410.0,
+      "length_in": 16.14,
+      "weight_g": 1800.0,
+      "weight_lb": 4.0
+    },
+    "release": {
+      "location": "Weedin Island",
+      "coords": "27.84299, -82.60426",
+      "date": "2023-06-25 00:00:00",
+      "length_mm": 205.0,
+      "length_in": 8.07,
+      "weight_g": 155.0,
+      "tag_image": "FIN CLIP final.jpg"
     }
   },
   {
     "id": 16,
-    "species": "Spotted Seatrout",
-    "origin": "Hatchery",
-    "fish_image": "Spotted seatrout.jpg",
+    "species": "Snook",
+    "origin": "Wild caught",
+    "fish_image": "Snook.jpg",
     "catch": {
-      "location": "Mead Point",
-      "coords": "27\u00b030'52.6\"N 82\u00b040'57.1\"W",
-      "length_mm": 580,
-      "length_in": 22.83,
-      "weight_g": 2770.0,
-      "weight_lb": 6.1
-    },
-    "release": {
-      "location": "Double Branch Bay",
-      "coords": "28\u00b000'23.1\"N 82\u00b037'12.7\"W",
-      "date": "2023-01-31 00:00:00",
-      "length_mm": 118.0,
-      "length_in": 4.65,
-      "weight_g": 12.0,
-      "tag_type": "Streamer",
-      "tag_image": ""
+      "location": "Pass-A-Grille Jetty",
+      "coords": "27.69210, -82.74000",
+      "length_mm": 640.0,
+      "length_in": 25.20,
+      "weight_g": 13200.0,
+      "weight_lb": 29.0
     }
   },
   {
     "id": 17,
-    "species": "Spotted Seatrout",
-    "origin": "Hatchery",
-    "fish_image": "Spotted seatrout.jpg",
+    "species": "Red Drum",
+    "origin": "Wild caught",
+    "fish_image": "Reddrum.jpg",
     "catch": {
-      "location": "Anna Maria Sound",
-      "coords": "27\u00b029'34.9\"N 82\u00b041'23.2\"W",
-      "length_mm": 535,
-      "length_in": 21.06,
-      "weight_g": 1928.0,
-      "weight_lb": 4.25
-    },
-    "release": {
-      "location": "Weedon Island",
-      "coords": "27\u00b050'23.3\"N 82\u00b035'22.5\"W",
-      "date": "2023-07-14 00:00:00",
-      "length_mm": 135.0,
-      "length_in": 5.31,
-      "weight_g": 46.0,
-      "tag_type": "PIT",
-      "tag_image": ""
+      "location": "Shell Key Preserve",
+      "coords": "27.62380, -82.74090",
+      "length_mm": 570.0,
+      "length_in": 22.44,
+      "weight_g": 8600.0,
+      "weight_lb": 18.9
     }
   },
   {
     "id": 18,
     "species": "Spotted Seatrout",
-    "origin": "Hatchery",
+    "origin": "Wild caught",
     "fish_image": "Spotted seatrout.jpg",
     "catch": {
-      "location": "Cockroach Bay",
-      "coords": "27\u00b042'39.3\"N 82\u00b029'57.7\"W",
-      "length_mm": 256,
-      "length_in": 10.08,
-      "weight_g": 627.8,
-      "weight_lb": 1.38
-    },
-    "release": {
-      "location": "Cockroach Bay",
-      "coords": "27\u00b042'39.3\"N 82\u00b029'57.7\"W",
-      "date": "2024-08-28 00:00:00",
-      "length_mm": 198.0,
-      "length_in": 7.8,
-      "weight_g": 98.0,
-      "tag_type": "PIT",
-      "tag_image": ""
+      "location": "Fort De Soto Bay",
+      "coords": "27.63500, -82.71940",
+      "length_mm": 360.0,
+      "length_in": 14.17,
+      "weight_g": 1500.0,
+      "weight_lb": 3.3
     }
   },
   {
     "id": 19,
-    "species": "Spotted Seatrout",
+    "species": "Snook",
     "origin": "Hatchery",
-    "fish_image": "Spotted seatrout.jpg",
+    "fish_image": "Snook.jpg",
     "catch": {
-      "location": "Picnic Island",
-      "coords": "27\u00b051'00.8\"N 82\u00b033'20.0\"W",
-      "length_mm": 200,
-      "length_in": 7.87,
-      "weight_g": 393.7,
-      "weight_lb": 0.87
+      "location": "South Skyway Pier",
+      "coords": "27.63510, -82.67380",
+      "length_mm": 500.0,
+      "length_in": 19.69,
+      "weight_g": 4600.0,
+      "weight_lb": 10.1
     },
     "release": {
-      "location": "Kitchen Key",
-      "coords": "27\u00b036'28.8\"N 82\u00b034'15.4\"W",
-      "date": "2024-12-01 00:00:00",
-      "length_mm": 123.0,
-      "length_in": 4.84,
-      "weight_g": 23.0,
-      "tag_type": "Acoustic ",
-      "tag_image": ""
+      "location": "Boca Ciega Bay",
+      "coords": "27.76290, -82.73340",
+      "date": "2023-05-12 00:00:00",
+      "length_mm": 210.0,
+      "length_in": 8.27,
+      "weight_g": 155.0,
+      "tag_image": "PIT TAG BLACK Final.jpg"
     }
   },
   {
     "id": 20,
-    "species": "Spotted Seatrout",
+    "species": "Red Drum",
     "origin": "Hatchery",
-    "fish_image": "Spotted seatrout.jpg",
+    "fish_image": "Reddrum.jpg",
     "catch": {
-      "location": "Mckay Bay",
-      "coords": "27\u00b056'31.3\"N 82\u00b025'21.8\"W",
-      "length_mm": 173,
-      "length_in": 6.81,
-      "weight_g": 192.5,
-      "weight_lb": 0.42
+      "location": "North Skyway Pier",
+      "coords": "27.64120, -82.67310",
+      "length_mm": 550.0,
+      "length_in": 21.65,
+      "weight_g": 7400.0,
+      "weight_lb": 16.3
     },
     "release": {
-      "location": "Perico Bayou",
-      "coords": "27\u00b030'17.6\"N 82\u00b040'18.4\"W",
-      "date": "2025-05-12 00:00:00",
-      "length_mm": 168.0,
-      "length_in": 6.61,
-      "weight_g": 68.0,
-      "tag_type": "Streamer",
-      "tag_image": ""
+      "location": "Weedin Island",
+      "coords": "27.84299, -82.60426",
+      "date": "2023-05-30 00:00:00",
+      "length_mm": 205.0,
+      "length_in": 8.07,
+      "weight_g": 155.0,
+      "tag_image": "ACOUSTIC TAG Final .jpg"
     }
   },
   {
     "id": 21,
-    "species": "Red Drum",
-    "origin": "Wild caught",
-    "fish_image": "Reddrum.jpg",
+    "species": "Spotted Seatrout",
+    "origin": "Hatchery",
+    "fish_image": "Spotted seatrout.jpg",
     "catch": {
-      "location": "Double Branch Bay",
-      "coords": "28\u00b000'23.1\"N 82\u00b037'12.7\"W",
-      "length_mm": 380,
-      "length_in": 14.96,
-      "weight_g": 540.0,
-      "weight_lb": 1.19
+      "location": "Boyd Hill Nature Preserve",
+      "coords": "27.74010, -82.65380",
+      "length_mm": 390.0,
+      "length_in": 15.35,
+      "weight_g": 1900.0,
+      "weight_lb": 4.2
+    },
+    "release": {
+      "location": "Cockroach Bay",
+      "coords": "27.64122, -82.48228",
+      "date": "2023-06-10 00:00:00",
+      "length_mm": 210.0,
+      "length_in": 8.27,
+      "weight_g": 160.0,
+      "tag_image": "STREAMER TAG.jpg"
     }
   },
   {
     "id": 22,
-    "species": "Red Drum",
+    "species": "Snook",
     "origin": "Wild caught",
-    "fish_image": "Reddrum.jpg",
+    "fish_image": "Snook.jpg",
     "catch": {
-      "location": "Ballast Point",
-      "coords": "27\u00b053'22.4\"N 82\u00b028'48.2\"W",
-      "length_mm": 440,
-      "length_in": 17.32,
-      "weight_g": 830.0,
-      "weight_lb": 1.83
+      "location": "Lassing Park",
+      "coords": "27.75260, -82.63340",
+      "length_mm": 720.0,
+      "length_in": 28.35,
+      "weight_g": 16000.0,
+      "weight_lb": 35.3
     }
   },
   {
@@ -413,40 +403,49 @@
     "origin": "Wild caught",
     "fish_image": "Reddrum.jpg",
     "catch": {
-      "location": "Cooper Bayou",
-      "coords": "27\u00b058'14.0\"N 82\u00b041'43.2\"W",
-      "length_mm": 660,
-      "length_in": 25.98,
-      "weight_g": 2600.0,
-      "weight_lb": 5.73
+      "location": "Tampa Bay",
+      "coords": "27.74500, -82.63000",
+      "length_mm": 510.0,
+      "length_in": 20.08,
+      "weight_g": 6200.0,
+      "weight_lb": 13.7
     }
   },
   {
     "id": 24,
-    "species": "Red Drum",
+    "species": "Spotted Seatrout",
     "origin": "Wild caught",
-    "fish_image": "Reddrum.jpg",
+    "fish_image": "Spotted seatrout.jpg",
     "catch": {
-      "location": "Terra Ceia Bay",
-      "coords": "27\u00b032'52.9\"N 82\u00b035'53.1\"W",
-      "length_mm": 510,
-      "length_in": 20.08,
-      "weight_g": 1300.0,
-      "weight_lb": 2.87
+      "location": "Big Bayou",
+      "coords": "27.74800, -82.63300",
+      "length_mm": 370.0,
+      "length_in": 14.57,
+      "weight_g": 1600.0,
+      "weight_lb": 3.5
     }
   },
   {
     "id": 25,
-    "species": "Red Drum",
-    "origin": "Wild caught",
-    "fish_image": "Reddrum.jpg",
+    "species": "Snook",
+    "origin": "Hatchery",
+    "fish_image": "Snook.jpg",
     "catch": {
-      "location": "Bonne Fortune Key",
-      "coords": "27\u00b038'18.8\"N 82\u00b042'21.0\"W",
-      "length_mm": 310,
-      "length_in": 12.2,
-      "weight_g": 330.0,
-      "weight_lb": 0.73
+      "location": "Clam Bayou",
+      "coords": "27.74856, -82.68125",
+      "length_mm": 510.0,
+      "length_in": 20.08,
+      "weight_g": 5400.0,
+      "weight_lb": 11.9
+    },
+    "release": {
+      "location": "Clam Bayou",
+      "coords": "27.74856, -82.68125",
+      "date": "2023-07-20 00:00:00",
+      "length_mm": 225.0,
+      "length_in": 8.86,
+      "weight_g": 165.0,
+      "tag_image": "PIT TAG RED Final.jpg"
     }
   },
   {
@@ -455,118 +454,86 @@
     "origin": "Hatchery",
     "fish_image": "Reddrum.jpg",
     "catch": {
-      "location": "Tarpon Key",
-      "coords": "27\u00b039'57.2\"N 82\u00b041'26.0\"W",
-      "length_mm": 370,
-      "length_in": 14.57,
-      "weight_g": 2988.8,
-      "weight_lb": 6.59
+      "location": "Fort De Soto Back Bay",
+      "coords": "27.64010, -82.71500",
+      "length_mm": 535.0,
+      "length_in": 21.06,
+      "weight_g": 7200.0,
+      "weight_lb": 15.9
     },
     "release": {
-      "location": "Alafia River",
-      "coords": "27\u00b042'49.8\"N 82\u00b027'53.3\"W",
-      "date": "2023-10-23 00:00:00",
-      "length_mm": 111.0,
-      "length_in": 4.37,
-      "weight_g": 20.0,
-      "tag_type": "Fin Clip",
-      "tag_image": ""
+      "location": "Cockroach Bay",
+      "coords": "27.64122, -82.48228",
+      "date": "2023-05-22 00:00:00",
+      "length_mm": 210.0,
+      "length_in": 8.27,
+      "weight_g": 155.0,
+      "tag_image": "FIN CLIP final.jpg"
     }
   },
   {
     "id": 27,
-    "species": "Red Drum",
+    "species": "Spotted Seatrout",
     "origin": "Hatchery",
-    "fish_image": "Reddrum.jpg",
+    "fish_image": "Spotted seatrout.jpg",
     "catch": {
-      "location": "Rattlesnake Key",
-      "coords": "27\u00b033'34.3\"N 82\u00b037'41.3\"W",
-      "length_mm": 420,
-      "length_in": 16.54,
-      "weight_g": 3990.5,
-      "weight_lb": 8.8
+      "location": "Boca Ciega Bay",
+      "coords": "27.76290, -82.73340",
+      "length_mm": 400.0,
+      "length_in": 15.75,
+      "weight_g": 2000.0,
+      "weight_lb": 4.4
     },
     "release": {
-      "location": "Little Manatee River",
-      "coords": "27\u00b042'49.8\"N 82\u00b027'53.3\"W",
-      "date": "2023-02-23 00:00:00",
-      "length_mm": 156.0,
-      "length_in": 6.14,
-      "weight_g": 64.0,
-      "tag_type": "PIT",
-      "tag_image": ""
+      "location": "Boca Ciega Bay",
+      "coords": "27.76290, -82.73340",
+      "date": "2023-06-18 00:00:00",
+      "length_mm": 205.0,
+      "length_in": 8.07,
+      "weight_g": 160.0,
+      "tag_image": "ACOUSTIC TAG Final .jpg"
     }
   },
   {
     "id": 28,
-    "species": "Red Drum",
-    "origin": "Hatchery",
-    "fish_image": "Reddrum.jpg",
+    "species": "Snook",
+    "origin": "Wild caught",
+    "fish_image": "Snook.jpg",
     "catch": {
-      "location": "Big Bayou",
-      "coords": "27\u00b044'34.5\"N 82\u00b037'36.7\"W",
-      "length_mm": 230,
-      "length_in": 9.06,
-      "weight_g": 2111.2,
-      "weight_lb": 4.65
-    },
-    "release": {
-      "location": "Shell Key Preserve",
-      "coords": "27\u00b039'45.3\"N 82\u00b044'03.3\"W",
-      "date": "2024-02-15 00:00:00",
-      "length_mm": 139.0,
-      "length_in": 5.47,
-      "weight_g": 42.0,
-      "tag_type": "PIT",
-      "tag_image": ""
+      "location": "Shell Key Channel",
+      "coords": "27.62850, -82.73980",
+      "length_mm": 690.0,
+      "length_in": 27.17,
+      "weight_g": 14500.0,
+      "weight_lb": 32.0
     }
   },
   {
     "id": 29,
     "species": "Red Drum",
-    "origin": "Hatchery",
+    "origin": "Wild caught",
     "fish_image": "Reddrum.jpg",
     "catch": {
-      "location": "Pinellas Bayway (SR 679) Bridge (Fort DeSoto)",
-      "coords": "27\u00b038'59.9\"N 82\u00b042'57.5\"W",
-      "length_mm": 203,
-      "length_in": 7.99,
-      "weight_g": 1825.5,
-      "weight_lb": 4.03
-    },
-    "release": {
-      "location": "Weedon Island",
-      "coords": "27\u00b050'23.3\"N 82\u00b035'22.5\"W",
-      "date": "2024-07-30 00:00:00",
-      "length_mm": 191.0,
-      "length_in": 7.52,
-      "weight_g": 120.0,
-      "tag_type": "Streamer",
-      "tag_image": ""
+      "location": "Pass-A-Grille Flats",
+      "coords": "27.69080, -82.73400",
+      "length_mm": 580.0,
+      "length_in": 22.83,
+      "weight_g": 8000.0,
+      "weight_lb": 17.6
     }
   },
   {
     "id": 30,
-    "species": "Red Drum",
-    "origin": "Hatchery",
-    "fish_image": "Reddrum.jpg",
+    "species": "Spotted Seatrout",
+    "origin": "Wild caught",
+    "fish_image": "Spotted seatrout.jpg",
     "catch": {
-      "location": "St. Petersburg Pier",
-      "coords": "27\u00b046'24.7\"N 82\u00b037'19.6\"W",
-      "length_mm": 170,
-      "length_in": 6.69,
-      "weight_g": 500.9,
-      "weight_lb": 1.1
-    },
-    "release": {
-      "location": "Ballast Point",
-      "coords": "27\u00b053'22.4\"N 82\u00b028'48.2\"W",
-      "date": "2025-02-15 00:00:00",
-      "length_mm": 102.0,
-      "length_in": 4.02,
-      "weight_g": 18.0,
-      "tag_type": "PIT",
-      "tag_image": ""
+      "location": "Tampa Bay Bridge Channel",
+      "coords": "27.64050, -82.67290",
+      "length_mm": 345.0,
+      "length_in": 13.58,
+      "weight_g": 1350.0,
+      "weight_lb": 3.0
     }
   }
 ]
