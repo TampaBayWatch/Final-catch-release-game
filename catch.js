@@ -30,7 +30,7 @@ function pickFish() {
     return fish;
 }
 
-// Format today's date
+// Today's date for catch
 function getToday() {
     const d = new Date();
     return d.toLocaleDateString("en-US", {
@@ -40,11 +40,14 @@ function getToday() {
     });
 }
 
-// Format release dates (remove time)
+// Format release dates (remove 00:00:00)
 function formatReleaseDate(dateString) {
     if (!dateString) return "";
     const d = new Date(dateString);
-    if (isNaN(d)) return dateString.split(" ")[0]; 
+    if (isNaN(d)) {
+        // fallback: strip time manually if date is "2022-03-05 00:00:00"
+        return dateString.split(" ")[0];
+    }
     return d.toLocaleDateString("en-US", {
         year: "numeric",
         month: "long",
@@ -52,23 +55,22 @@ function formatReleaseDate(dateString) {
     });
 }
 
-// Display fish
+// Display fish on screen
 function showFish(f) {
 
-    // Species + Image
+    // Species Name
     document.getElementById("species").textContent = f.species;
 
-    // Show Wild Caught or Hatchery Fish
-    const originLabel = f.origin.toLowerCase().includes("hatch") ?
-        "HATCHERY FISH" : "WILD CAUGHT";
+    // Wild or Hatchery Label
+    const originLabel = f.origin.toLowerCase().includes("hatch")
+        ? "HATCHERY FISH"
+        : "WILD CAUGHT";
+    document.getElementById("originLabel").textContent = originLabel;
 
-    // Insert label below fish species
-    document.getElementById("species").innerHTML = 
-        `${f.species}<br><span style="font-size:22px; color:#0077aa; font-weight:bold;">${originLabel}</span>`;
-
+    // Fish Image
     document.getElementById("fishImage").src = "images/" + f.fish_image;
 
-    // Catch info with TODAY'S DATE
+    // Catch info
     document.getElementById("catchInfo").innerHTML = `
         <b>Catch Date:</b> ${getToday()}<br>
         <b>Catch Location:</b> ${f.catch.location} (${f.catch.lat}, ${f.catch.lon})<br>
@@ -86,8 +88,9 @@ function showFish(f) {
         `;
         document.getElementById("tagImage").src = "images/" + f.tag_image;
         document.getElementById("tagImage").style.display = "block";
+
     } else {
-        // Wild fish: hide release + tag
+        // Wild fish → hide everything extra
         document.getElementById("releaseInfo").innerHTML = "";
         document.getElementById("tagImage").style.display = "none";
     }
