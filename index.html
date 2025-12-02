@@ -51,4 +51,35 @@
         font-size: 22px; 
         color:#0077aa; 
         font-weight:bold; 
-        margin-t
+        margin-top:-10px;
+    }
+</style>
+</head>
+<body>
+
+<h1 id="titleHeader">Catch & Release Game</h1>
+
+<button id="castBtn">CAST A FISH</button>
+
+<div id="fishCard">
+    <h2 id="species"></h2>
+    <h3 id="originLabel"></h3>
+
+    <img id="fishImage" src="" alt="Fish Image">
+
+    <p id="catchInfo"></p>
+    <p id="releaseInfo"></p>
+
+    <p id="tagTypeText" style="font-size:20px; font-weight:bold; color:#444; margin-top:10px;"></p>
+
+    <img id="tagImage" src="" style="max-width:200px; display:none;" alt="Tag Image">
+
+    <br>
+    <button id="againBtn">CAST AGAIN</button>
+</div>
+
+<!-- VERSION FORCES REFRESH -->
+<script src="catch.js?v=3"></script>
+
+</body>
+</html>
