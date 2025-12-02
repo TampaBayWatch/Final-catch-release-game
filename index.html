@@ -3,67 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <title>Catch & Release Game</title>
-
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
+    body { 
+        font-family: Arial, sans-serif; 
+        text-align: center; 
+        padding: 20px; 
+        background: #f4f8fb;
+    }
+
+    #fishCard { 
+        display:none; 
+        opacity:0; 
+        transition: opacity 0.8s; 
+        margin-top:20px; 
         padding: 20px;
+        border-radius: 12px;
+        background: white;
+        width: 90%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    #fishCard {
-        display: none;
-        opacity: 0;
-        transition: opacity 0.8s;
-        margin-top: 20px;
+
+    img { 
+        max-width:60%; 
+        height:auto; 
+        margin-top:10px; 
     }
-    img {
-        max-width: 60%;
-        height: auto;
-        margin-top: 10px;
+
+    button { 
+        padding:20px 40px; 
+        font-size:24px; 
+        margin-top:20px; 
+        cursor:pointer; 
+        border-radius: 10px;
+        border: none;
+        background: #0077aa;
+        color: white;
     }
-    button {
-        padding: 20px 40px;
-        font-size: 24px;
-        margin-top: 20px;
-        cursor: pointer;
+
+    button:hover {
+        background: #005f88;
     }
-</style>
-</head>
 
-<body>
-
-<!-- Title Screen (hidden after first catch) -->
-<h1 id="titleHeader">Catch & Release Game</h1>
-
-<!-- Cast Button -->
-<button id="castBtn">CAST A FISH</button>
-
-<!-- Fish Display Card -->
-<div id="fishCard">
-
-    <!-- Species -->
-    <h2 id="species"></h2>
-
-    <!-- Wild / Hatchery label -->
-    <h3 id="originLabel" style="font-size:22px; color:#0077aa; font-weight:bold; margin-top:-10px;"></h3>
-
-    <!-- Fish Image -->
-    <img id="fishImage" src="" alt="Fish Image">
-
-    <!-- Catch Info -->
-    <p id="catchInfo"></p>
-
-    <!-- Release Info -->
-    <p id="releaseInfo"></p>
-
-    <!-- Tag Image -->
-    <img id="tagImage" src="" style="max-width:200px; display:none;" alt="Tag Image">
-
-    <br>
-    <button id="againBtn">CAST AGAIN</button>
-</div>
-
-<script src="catch.js"></script>
-
-</body>
-</html>
+    #originLabel {
+        font-size: 22px; 
+        color:#0077aa; 
+        font-weight:bold; 
+        margin-t
