@@ -5,13 +5,15 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  overflow-x: hidden; /* Prevent sideways button drifting */
 }
 
+/* MAIN CONTAINER */
 .container {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding-bottom: 120px; /* Space so fish card doesn't overlap bottom button */
+  padding-bottom: 120px; /* Ensure space for bottom button */
 }
 
 /* START SCREEN */
@@ -57,39 +59,72 @@ body {
   margin: 0 auto 20px auto;
 }
 
-.tag-img {
-  max-width: 150px;
-  display: block;
-  margin-top: 10px;
+/* ALL TEXT INSIDE CARD */
+.fish-card p {
+  margin: 6px 0;
+  font-size: 18px;
+  line-height: 1.35;
 }
 
-/* SECTION TITLES */
-.section-title {
-  color: #0a6c74;
-  font-size: 22px;
-  font-weight: bold;
-  margin-top: 25px;
-}
-
-/* BOLD LABEL STYLE */
+/* LABEL STYLE */
 .label {
   font-weight: bold;
   font-size: 18px;
 }
 
-/* BOTTOM FIXED CAST BUTTON — ALWAYS CENTERED */
+/* UNIFORM TAG IMAGE SIZE */
+.tag-img {
+  width: 120px;       /* <-- ALL tag images now same size */
+  height: auto;
+  display: block;
+  margin: 10px auto 0 auto;
+  object-fit: contain; /* Prevents stretching */
+}
+
+/* FIXED BOTTOM BUTTON — ALWAYS CENTERED */
 #bottomButtonWrapper {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 15px 0;
-  
+
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
 
   background: rgba(255,255,255,0.95);
   border-top: 2px solid #c9d4d6;
-
   z-index: 9999;
+}
+
+#castAgainButton {
+  margin: 0 auto !important;
+  display: inline-block !important;
+  padding: 14px 32px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .fish-card {
+    padding: 18px;
+  }
+
+  .fish-card h2 {
+    font-size: 24px;
+  }
+
+  .fish-card p {
+    font-size: 16px;
+  }
+
+  .fish-img {
+    max-width: 90%;
+  }
+
+  .tag-img {
+    width: 100px; /* Slightly smaller on small screens */
+  }
+}
