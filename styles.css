@@ -1,122 +1,81 @@
-/* -------------------------
-   GENERAL PAGE LAYOUT
--------------------------- */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #e9f3f5;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e5f0f3;
 }
 
-/* Container for all main content */
 .container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
 }
 
-/* -------------------------
-   START SCREEN
--------------------------- */
-#start-screen {
+.title {
   text-align: center;
-  margin-top: 80px;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-#start-screen h2 {
-  font-size: 28px;
+.fish-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.fish-img {
+  display: block;
+  width: 75%;
+  max-width: 430px;
+  margin: 10px auto 25px auto;
+}
+
+.section-title {
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #004f57;
 }
 
-/* -------------------------
-   BUTTON STYLING
--------------------------- */
-.main-btn {
-  background-color: #1a8ea1;
-  color: white;
+p {
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+hr {
+  margin: 25px 0;
   border: none;
-  padding: 14px 30px;
+  border-top: 2px solid #d3d3d3;
+}
+
+.tag-img {
+  display: block;
+  width: 180px;
+  height: auto;
+  margin: 15px auto 0 auto;
+}
+
+/* Buttons */
+.main-btn {
+  background-color: #1f869b;
+  border: none;
+  color: white;
+  padding: 12px 28px;
   font-size: 20px;
   border-radius: 10px;
   cursor: pointer;
+  display: block;
+  margin: 15px auto;
 }
 
-.main-btn:hover {
-  background-color: #147381;
-}
-
-/* Bottom button wrapper */
 #bottomButtonWrapper {
-  width: 100%;
   position: fixed;
   bottom: 0;
-  left: 0;
-  padding: 15px 0;
-  background: #e9f3f5;
+  width: 100%;
+  padding: 12px 0;
+  background: rgba(255, 255, 255, 0.9);
   text-align: center;
-  z-index: 2000;
-}
-
-#castAgainButton {
-  display: none;
-}
-
-/* -------------------------
-   FISH CARD CONTAINER
--------------------------- */
-.fish-card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  margin-bottom: 120px;
-}
-
-/* Fish name header */
-.fish-card h2 {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-/* Fish image */
-.fish-img {
-  display: block;
-  margin: 0 auto 30px auto;
-  max-width: 75%;
-}
-
-/* SECTION HEADERS */
-.section-title {
-  font-size: 22px;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  color: #0d6f7c;
-  font-weight: bold;
-}
-
-/* -------------------------
-   TEXT INSIDE FISH CARD
--------------------------- */
-.fish-card p {
-  margin: 10px 0 !important;
-  font-size: 18px;
-  line-height: 1.45 !important;
-}
-
-/* Make the field labels bold (e.g., Catch Location:) */
-.fish-card p strong {
-  font-weight: bold;
-}
-
-/* -------------------------
-   TAG IMAGES — UNIFORM SIZE
--------------------------- */
-.tag-img {
-  width: 180px;      /* Adjust as needed */
-  max-height: 120px; /* Ensures consistent proportions */
-  object-fit: contain;
-  display: block;
-  margin: 15px auto 0 auto;
+  border-top: 2px solid #c5d3d8;
 }
