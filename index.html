@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
   <div class="container">
 
     <!-- START SCREEN -->
@@ -16,18 +17,16 @@
       <button id="startButton" class="main-btn">Cast a Line</button>
     </div>
 
-    <!-- FISH RESULT -->
-    <div id="result" style="display: none;"></div>
+    <!-- RESULT -->
+    <div id="result" style="display:none;"></div>
 
   </div>
 
-  <!-- FIXED BOTTOM BUTTON -->
-  <div id="bottomButtonWrapper">
-    <button id="castAgainButton" class="main-btn" style="display: none;">
-      Cast a Line
-    </button>
+  <!-- BOTTOM CAST BUTTON (hidden until JS shows it) -->
+  <div id="bottomButtonWrapper" class="hidden">
+    <button id="castAgainButton" class="main-btn">Cast a Line</button>
   </div>
 
- <script src="catch.js?v=2"></script>
+  <script src="catch.js"></script>
 </body>
 </html>
