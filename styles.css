@@ -11,7 +11,7 @@ body {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding-bottom: 120px; /* Space so fish card doesn't overlap bottom button */
+  padding-bottom: 140px; /* Space so fish card doesn't overlap bottom button */
 }
 
 /* START SCREEN */
@@ -58,9 +58,10 @@ body {
 }
 
 .tag-img {
-  max-width: 150px;
   display: block;
-  margin-top: 10px;
+  margin: 15px auto 0 auto;
+  width: 180px;
+  height: auto;
 }
 
 /* SECTION TITLES */
@@ -71,33 +72,43 @@ body {
   margin-top: 25px;
 }
 
-/* BOLD LABEL STYLE */
-.label {
-  font-weight: bold;
+/* LABELS + TEXT SPACING */
+p {
   font-size: 18px;
+  margin: 8px 0;
+  line-height: 1.45;
 }
 
-/* BOTTOM FIXED CAST BUTTON — ALWAYS CENTERED */
+hr {
+  margin: 25px 0;
+  border: none;
+  border-top: 2px solid #c9d4d6;
+}
+
+/* FIXED BOTTOM CAST BUTTON — HIDDEN UNTIL FIRST CAST */
 #bottomButtonWrapper {
+  display: none;   /* ⬅ IMPORTANT: hides button on first page */
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 15px 0;
-  
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
 
+  padding: 15px 0;
   background: rgba(255,255,255,0.95);
   border-top: 2px solid #c9d4d6;
+  text-align: center;
 
   z-index: 9999;
 }
 
+/* WHEN JS SHOWS IT */
+#bottomButtonWrapper.show {
+  display: block;
+}
+
+/* INNER BUTTON AT BOTTOM */
 #castAgainButton {
   margin: 0 auto !important;
-  display: inline-block !important;
   padding: 14px 32px;
   font-size: 20px;
   border-radius: 10px;
