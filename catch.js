@@ -10,67 +10,53 @@ window.onload = async function () {
 };
 
 function castLine() {
-  // Hide start screen after first cast
+  // Hide start screen on first cast
   if (firstCast) {
     document.getElementById("start-screen").style.display = "none";
     firstCast = false;
   }
 
-  // Pick a fish
   const fish = fishData[Math.floor(Math.random() * fishData.length)];
-
-  // Today's date for catch date
-  const today = new Date().toISOString().split("T")[0];
-
-  // Result container
   const result = document.getElementById("result");
   result.style.display = "block";
 
-  // Build card
+  // Get today’s date for catch date
+  const today = new Date().toISOString().slice(0, 10);
+
+  // Build clean, consistent info layout
   let html = `
     <div class="fish-card">
       <h2>You caught a ${fish.species}!</h2>
 
       <img src="${fish.fish_image}" class="fish-img" />
 
-      <p><strong>Origin:</strong><br>${fish.origin}</p>
+      <p><strong>Origin:</strong> ${fish.origin}</p>
+      <p><strong>Catch Date:</strong> ${today}</p>
 
-      <p><strong>Catch Date:</strong><br>${today}</p>
-
-      <h3>Catch Location:</h3>
-      <p>${fish.catch.location}</p>
+      <p><strong>Catch Location:</strong> ${fish.catch.location}</p>
       <p><strong>Coordinates:</strong> ${fish.catch.coords}</p>
 
-      <h3>Catch Size:</h3>
-      <p>${fish.catch.length_mm} mm (${fish.catch.length_in} in)</p>
-
-      <h3>Catch Weight:</h3>
-      <p>${fish.catch.weight_g} g (${fish.catch.weight_lb} lb)</p>
+      <p><strong>Catch Size:</strong> ${fish.catch.length_mm} mm (${fish.catch.length_in} in)</p>
+      <p><strong>Catch Weight:</strong> ${fish.catch.weight_g} g (${fish.catch.weight_lb} lb)</p>
   `;
 
-  // Release data for hatchery fish
+  // Hatchery release info
   if (fish.origin === "Hatchery") {
     html += `
-      <h3>Release Information</h3>
-
-      <p><strong>Date Released:</strong><br>${fish.release.date}</p>
-
-      <p><strong>Release Location:</strong><br>${fish.release.location}</p>
+      <br>
+      <p><strong>Release Date:</strong> ${fish.release.date}</p>
+      <p><strong>Release Location:</strong> ${fish.release.location}</p>
       <p><strong>Coordinates:</strong> ${fish.release.coords}</p>
+      <p><strong>Release Size:</strong> ${fish.release.length_mm} mm (${fish.release.length_in} in)</p>
+      <p><strong>Release Weight:</strong> ${fish.release.weight_g} g (${fish.release.weight_lb} lb)</p>
 
-      <p><strong>Release Size:</strong><br>${fish.release.length_mm} mm (${fish.release.length_in} in)</p>
-
-      <p><strong>Release Weight:</strong><br>${fish.release.weight_g} g (${fish.release.weight_lb} lb)</p>
-
-      <p><strong>Tag Type:</strong><br>${fish.release.tag_type}</p>
+      <p><strong>Tag Type:</strong> ${fish.release.tag_type}</p>
       <img src="${fish.release.tag_image}" class="tag-img" />
     `;
   }
 
   html += `</div>`;
-
   result.innerHTML = html;
 
-  // Show button
   document.getElementById("castAgainButton").style.display = "block";
 }
