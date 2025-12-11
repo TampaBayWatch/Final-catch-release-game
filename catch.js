@@ -1,6 +1,12 @@
 let fishData = [];
 let firstCast = true;
 
+// Get today's date for Catch Date
+function getTodayDate() {
+  const d = new Date();
+  return d.toISOString().split("T")[0];
+}
+
 window.onload = async function () {
   const response = await fetch("fish.json");
   fishData = await response.json();
@@ -16,30 +22,34 @@ function castLine() {
   }
 
   const fish = fishData[Math.floor(Math.random() * fishData.length)];
-
-  const today = new Date().toISOString().slice(0, 10);
+  fish.catch.catch_date = getTodayDate();
 
   const result = document.getElementById("result");
   result.style.display = "block";
 
   let html = `
     <div class="fish-card">
-      <h2>You caught a ${fish.species}!</h2>
+      <h1 class="title">You caught a ${fish.species}!</h1>
 
       <img src="${fish.fish_image}" class="fish-img" />
 
       <p><strong>Origin:</strong> ${fish.origin}</p>
-      <p><strong>Catch Date:</strong> ${today}</p>
+      <p><strong>Catch Date:</strong> ${fish.catch.catch_date}</p>
 
+      <hr />
+
+      <h2 class="section-title">CATCH INFORMATION</h2>
       <p><strong>Catch Location:</strong> ${fish.catch.location}</p>
       <p><strong>Coordinates:</strong> ${fish.catch.coords}</p>
-
       <p><strong>Catch Size:</strong> ${fish.catch.length_mm} mm (${fish.catch.length_in} in)</p>
       <p><strong>Catch Weight:</strong> ${fish.catch.weight_g} g (${fish.catch.weight_lb} lb)</p>
   `;
 
   if (fish.origin === "Hatchery") {
     html += `
+      <hr />
+
+      <h2 class="section-title">RELEASE INFORMATION</h2>
       <p><strong>Release Date:</strong> ${fish.release.date}</p>
       <p><strong>Release Location:</strong> ${fish.release.location}</p>
       <p><strong>Coordinates:</strong> ${fish.release.coords}</p>
