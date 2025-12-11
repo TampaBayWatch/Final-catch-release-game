@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  overflow-x: hidden; /* Prevent sideways button drifting */
+  overflow-x: hidden; /* Prevent sideways scroll */
 }
 
 /* MAIN CONTAINER */
@@ -13,7 +13,7 @@ body {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding-bottom: 120px; /* Ensure space for bottom button */
+  padding-bottom: 120px;
 }
 
 /* START SCREEN */
@@ -59,29 +59,22 @@ body {
   margin: 0 auto 20px auto;
 }
 
-/* ALL TEXT INSIDE CARD */
 .fish-card p {
   margin: 6px 0;
   font-size: 18px;
   line-height: 1.35;
 }
 
-/* LABEL STYLE */
-.label {
-  font-weight: bold;
-  font-size: 18px;
-}
-
 /* UNIFORM TAG IMAGE SIZE */
 .tag-img {
-  width: 120px;       /* <-- ALL tag images now same size */
-  height: auto;
-  display: block;
-  margin: 10px auto 0 auto;
-  object-fit: contain; /* Prevents stretching */
+  width: 140px !important;
+  height: 140px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 10px auto 0 auto !important;
 }
 
-/* FIXED BOTTOM BUTTON — ALWAYS CENTERED */
+/* FIXED BOTTOM BUTTON */
 #bottomButtonWrapper {
   position: fixed;
   bottom: 0;
@@ -106,7 +99,7 @@ body {
   border-radius: 10px;
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE */
 @media (max-width: 600px) {
   .fish-card {
     padding: 18px;
@@ -125,6 +118,7 @@ body {
   }
 
   .tag-img {
-    width: 100px; /* Slightly smaller on small screens */
+    width: 110px !important;
+    height: 110px !important;
   }
 }
