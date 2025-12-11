@@ -1,0 +1,92 @@
+/* GENERAL PAGE LAYOUT */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #eef5f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* START SCREEN */
+#start-screen h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+/* FISH CARD */
+.fish-card {
+  background: white;
+  padding: 20px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+.fish-card h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.fish-img {
+  width: 100%;
+  max-width: 420px;
+  margin: 10px auto;
+  display: block;
+}
+
+.tag-img {
+  width: 70%;
+  max-width: 250px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* TITLES */
+h3 {
+  margin-top: 18px;
+  color: #1a5e63;
+}
+
+/* BUTTONS */
+.main-btn {
+  background: #1a8cab;
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.main-btn:hover {
+  background: #15768f;
+}
+
+/* FIXED BOTTOM BUTTON */
+#bottomButtonWrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+}
+
+/* RESULT SECTION */
+#result {
+  margin-bottom: 90px; /* leave space for bottom button */
+}
