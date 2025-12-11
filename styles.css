@@ -1,124 +1,122 @@
-/* GENERAL PAGE STYLING */
+/* -------------------------
+   GENERAL PAGE LAYOUT
+-------------------------- */
 body {
   font-family: Arial, sans-serif;
-  background-color: #e6f1f3;
   margin: 0;
   padding: 0;
-  text-align: center;
-  overflow-x: hidden; /* Prevent sideways scroll */
+  background: #e9f3f5;
 }
 
-/* MAIN CONTAINER */
+/* Container for all main content */
 .container {
-  width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding-bottom: 120px;
+  padding: 20px;
 }
 
-/* START SCREEN */
+/* -------------------------
+   START SCREEN
+-------------------------- */
 #start-screen {
+  text-align: center;
   margin-top: 80px;
 }
 
+#start-screen h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* -------------------------
+   BUTTON STYLING
+-------------------------- */
 .main-btn {
-  background-color: #1c8394;
+  background-color: #1a8ea1;
   color: white;
-  padding: 15px 28px;
   border: none;
-  border-radius: 10px;
+  padding: 14px 30px;
   font-size: 20px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: 0.2s ease;
 }
 
 .main-btn:hover {
-  background-color: #176b78;
+  background-color: #147381;
 }
 
-/* FISH CARD */
-.fish-card {
-  background: white;
-  margin: 40px auto;
-  padding: 25px;
-  border-radius: 12px;
-  max-width: 850px;
-  text-align: left;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.fish-card h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.fish-img {
-  max-width: 80%;
-  display: block;
-  margin: 0 auto 20px auto;
-}
-
-.fish-card p {
-  margin: 6px 0;
-  font-size: 18px;
-  line-height: 1.35;
-}
-
-/* UNIFORM TAG IMAGE SIZE */
-.tag-img {
-  width: 140px !important;
-  height: 140px !important;
-  object-fit: contain !important;
-  display: block !important;
-  margin: 10px auto 0 auto !important;
-}
-
-/* FIXED BOTTOM BUTTON */
+/* Bottom button wrapper */
 #bottomButtonWrapper {
+  width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
   padding: 15px 0;
-
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-
-  background: rgba(255,255,255,0.95);
-  border-top: 2px solid #c9d4d6;
-  z-index: 9999;
+  background: #e9f3f5;
+  text-align: center;
+  z-index: 2000;
 }
 
 #castAgainButton {
-  margin: 0 auto !important;
-  display: inline-block !important;
-  padding: 14px 32px;
-  font-size: 20px;
-  border-radius: 10px;
+  display: none;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  .fish-card {
-    padding: 18px;
-  }
+/* -------------------------
+   FISH CARD CONTAINER
+-------------------------- */
+.fish-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-bottom: 120px;
+}
 
-  .fish-card h2 {
-    font-size: 24px;
-  }
+/* Fish name header */
+.fish-card h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 
-  .fish-card p {
-    font-size: 16px;
-  }
+/* Fish image */
+.fish-img {
+  display: block;
+  margin: 0 auto 30px auto;
+  max-width: 75%;
+}
 
-  .fish-img {
-    max-width: 90%;
-  }
+/* SECTION HEADERS */
+.section-title {
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #0d6f7c;
+  font-weight: bold;
+}
 
-  .tag-img {
-    width: 110px !important;
-    height: 110px !important;
-  }
+/* -------------------------
+   TEXT INSIDE FISH CARD
+-------------------------- */
+.fish-card p {
+  margin: 10px 0 !important;
+  font-size: 18px;
+  line-height: 1.45 !important;
+}
+
+/* Make the field labels bold (e.g., Catch Location:) */
+.fish-card p strong {
+  font-weight: bold;
+}
+
+/* -------------------------
+   TAG IMAGES — UNIFORM SIZE
+-------------------------- */
+.tag-img {
+  width: 180px;      /* Adjust as needed */
+  max-height: 120px; /* Ensures consistent proportions */
+  object-fit: contain;
+  display: block;
+  margin: 15px auto 0 auto;
 }
