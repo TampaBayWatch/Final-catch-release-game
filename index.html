@@ -4,55 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catch & Release Game</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #e4f2ff;
-      margin: 0;
-      padding: 20px;
-    }
-    #game-box {
-      max-width: 600px;
-      background: white;
-      padding: 20px;
-      margin: 0 auto;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    }
-    img {
-      max-width: 90%;
-      margin-top: 10px;
-      border-radius: 8px;
-    }
-    button {
-      padding: 15px 25px;
-      font-size: 20px;
-      border: none;
-      background: #3a8ee6;
-      color: white;
-      border-radius: 10px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-    button:hover {
-      background: #2a6fb8;
-    }
-    .label {
-      font-weight: bold;
-      margin-top: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <div id="game-box">
-    <h1>Catch & Release Game</h1>
-    <p>Tap below to see what fish you catch!</p>
+  <div class="container">
 
-    <button onclick="castLine()">🎣 Cast a Line</button>
+    <!-- START SCREEN -->
+    <div id="start-screen">
+      <h2>Tap below to see what fish you catch!</h2>
+      <button id="startButton" class="main-btn">Cast a Line</button>
+    </div>
 
-    <div id="result"></div>
+    <!-- RESULT SECTION (FISH INFO GOES HERE) -->
+    <div id="result" style="display:none;"></div>
+
+  </div>
+
+  <!-- FIXED BOTTOM BUTTON -->
+  <div id="bottomButtonWrapper">
+    <button id="castAgainButton" class="main-btn" style="display:none;">
+      Cast a Line
+    </button>
   </div>
 
   <script src="catch.js"></script>
