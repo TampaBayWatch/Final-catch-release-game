@@ -1,101 +1,95 @@
 /* GENERAL PAGE STYLING */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #e8f2f4;
+  font-family: Arial, sans-serif;
+  background-color: #e6f1f3;
   margin: 0;
   padding: 0;
   text-align: center;
-  overflow-x: hidden; /* Prevent button from shifting sideways */
 }
 
-/* MAIN CONTAINER */
 .container {
+  width: 100%;
   max-width: 900px;
-  margin: auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding-bottom: 120px; /* Space so fish card doesn't overlap bottom button */
 }
 
 /* START SCREEN */
-#start-screen h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+#start-screen {
+  margin-top: 80px;
 }
 
-/* BUTTON STYLING */
 .main-btn {
-  background-color: #1b8ea6;
+  background-color: #1c8394;
   color: white;
+  padding: 15px 28px;
   border: none;
-  padding: 15px 32px;
-  font-size: 18px;
   border-radius: 10px;
+  font-size: 20px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s ease;
 }
 
 .main-btn:hover {
-  background-color: #166f81;
-}
-
-/* FIXED BOTTOM BUTTON */
-#bottomButtonWrapper {
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-  z-index: 1000;
+  background-color: #176b78;
 }
 
 /* FISH CARD */
 .fish-card {
   background: white;
+  margin: 40px auto;
   padding: 25px;
-  border-radius: 15px;
-  margin-bottom: 120px; /* Leaves room for bottom button */
-  text-align: left;
+  border-radius: 12px;
   max-width: 850px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* HEADERS INSIDE CARD */
 .fish-card h2 {
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 15px;
   font-size: 28px;
-  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.fish-card h3 {
-  margin-top: 25px;
-  margin-bottom: 10px;
-  color: #0a6b78;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* TEXT INSIDE CARD */
-.fish-card p {
-  margin: 6px 0;
-  font-size: 18px;
-}
-
-.fish-card strong {
-  font-weight: bold;
-}
-
-/* IMAGES */
 .fish-img {
-  width: 90%;
-  max-width: 500px;
+  max-width: 80%;
   display: block;
-  margin: 10px auto 25px auto;
+  margin: 0 auto 20px auto;
 }
 
 .tag-img {
-  width: 180px;
+  max-width: 150px;
   display: block;
-  margin: 10px auto;
+  margin-top: 10px;
 }
+
+/* SECTION TITLES */
+.section-title {
+  color: #0a6c74;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+/* BOLD LABEL STYLE */
+.label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* BOTTOM FIXED CAST BUTTON — ALWAYS CENTERED */
+#bottomButtonWrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  background: rgba(255,255,255,0.95);
+  border-top: 2px solid #c9d4d6;
+
+  z-index: 9999;
