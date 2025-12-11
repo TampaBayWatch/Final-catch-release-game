@@ -10,20 +10,18 @@ window.onload = async function () {
 };
 
 function castLine() {
-  // Hide start screen on first cast
   if (firstCast) {
     document.getElementById("start-screen").style.display = "none";
     firstCast = false;
   }
 
   const fish = fishData[Math.floor(Math.random() * fishData.length)];
+
+  const today = new Date().toISOString().slice(0, 10);
+
   const result = document.getElementById("result");
   result.style.display = "block";
 
-  // Get today’s date for catch date
-  const today = new Date().toISOString().slice(0, 10);
-
-  // Build clean, consistent info layout
   let html = `
     <div class="fish-card">
       <h2>You caught a ${fish.species}!</h2>
@@ -40,16 +38,13 @@ function castLine() {
       <p><strong>Catch Weight:</strong> ${fish.catch.weight_g} g (${fish.catch.weight_lb} lb)</p>
   `;
 
-  // Hatchery release info
   if (fish.origin === "Hatchery") {
     html += `
-      <br>
       <p><strong>Release Date:</strong> ${fish.release.date}</p>
       <p><strong>Release Location:</strong> ${fish.release.location}</p>
       <p><strong>Coordinates:</strong> ${fish.release.coords}</p>
       <p><strong>Release Size:</strong> ${fish.release.length_mm} mm (${fish.release.length_in} in)</p>
       <p><strong>Release Weight:</strong> ${fish.release.weight_g} g (${fish.release.weight_lb} lb)</p>
-
       <p><strong>Tag Type:</strong> ${fish.release.tag_type}</p>
       <img src="${fish.release.tag_image}" class="tag-img" />
     `;
