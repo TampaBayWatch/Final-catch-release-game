@@ -11,7 +11,7 @@ body {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding-bottom: 120px; /* Space so fish card doesn't overlap bottom button */
+  padding-bottom: 140px;
 }
 
 /* START SCREEN */
@@ -45,65 +45,58 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.fish-card h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
 .fish-img {
   max-width: 80%;
   display: block;
   margin: 0 auto 20px auto;
 }
 
-/* TAG IMAGE — uniform size */
 .tag-img {
   width: 150px;
-  height: 150px; 
+  height: 150px;
   object-fit: contain;
-  display: block;
-  margin: 15px auto 0 auto;
+  margin: 15px auto;
 }
 
 /* SECTION TITLES */
 .section-title {
-  color: #0a6c74;
   font-size: 22px;
   font-weight: bold;
+  color: #0a6c74;
   margin-top: 25px;
 }
 
-/* BOLD LABEL STYLE */
-.label {
-  font-weight: bold;
+/* TEXT */
+p {
   font-size: 18px;
+  line-height: 1.45;
+  margin: 10px 0;
 }
 
-/* FIXED BOTTOM CAST BUTTON — STARTS HIDDEN */
+hr {
+  border: none;
+  border-top: 2px solid #cbd4d6;
+  margin: 20px 0;
+}
+
+/* BOTTOM BUTTON */
 #bottomButtonWrapper {
-  display: none; /* hidden until JS enables it */
+  display: none;              /* hidden until JS reveals it */
   position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
-  padding: 15px 0;
-
   background: rgba(255,255,255,0.95);
-  border-top: 2px solid #c9d4d6;
-
+  border-top: 2px solid #cbd4d6;
   text-align: center;
+  padding: 16px 0;
   z-index: 9999;
 }
 
-/* When JS adds .show, button appears */
 #bottomButtonWrapper.show {
   display: block;
 }
 
 #castAgainButton {
-  padding: 14px 32px;
   font-size: 20px;
-  border-radius: 10px;
-  margin: 0 auto;
+  padding: 14px 32px;
 }
