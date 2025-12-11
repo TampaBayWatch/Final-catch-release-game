@@ -1,72 +1,59 @@
 let fishData = [];
+let firstCast = true;
 
-// Load JSON data
-fetch("fish.json")
-  .then(response => response.json())
-  .then(data => {
-    fishData = data;
-  });
+window.onload = async function () {
+  const response = await fetch("fish.json");
+  fishData = await response.json();
+
+  document.getElementById("startButton").addEventListener("click", castLine);
+  document.getElementById("castAgainButton").addEventListener("click", castLine);
+};
 
 function castLine() {
-  if (fishData.length === 0) {
-    document.getElementById("result").innerHTML = "<p>Loading fish...</p>";
-    return;
+  // Hide start screen after first cast
+  if (firstCast) {
+    document.getElementById("start-screen").style.display = "none";
+    firstCast = false;
   }
 
-  // Pick a random fish
+  // Select random fish
   const fish = fishData[Math.floor(Math.random() * fishData.length)];
 
-  // Get today's date in YYYY-MM-DD format
-  const today = new Date().toISOString().split("T")[0];
+  // Select result container
+  const result = document.getElementById("result");
+  result.style.display = "block";
 
-  // Insert catch_date dynamically
-  fish.catch_date = today;
-
-  // Build display HTML
+  // Build fish info card
   let html = `
-    <h2>You caught a ${fish.species}!</h2>
-    <img src="${fish.fish_image}" alt="${fish.species} image">
+    <div class="fish-card">
+      <h2>${fish.species} (${fish.origin})</h2>
+      <img src="${fish.fish_image}" class="fish-img" />
 
-    <p class="label">Origin:</p>
-    <p>${fish.origin}</p>
-
-    <p class="label">Catch Date:</p>
-    <p>${fish.catch_date}</p>
-
-    <p class="label">Catch Location:</p>
-    <p>${fish.catch.location}</p>
-
-    <p class="label">Catch Size:</p>
-    <p>${fish.catch.length_mm} mm (${fish.catch.length_in} in)</p>
-
-    <p class="label">Catch Weight:</p>
-    <p>${fish.catch.weight_g} g (${fish.catch.weight_lb} lbs)</p>
+      <h3>Catch Data</h3>
+      <p><strong>Location:</strong> ${fish.catch.location}</p>
+      <p><strong>Coordinates:</strong> ${fish.catch.coords}</p>
+      <p><strong>Length:</strong> ${fish.catch.length_mm} mm (${fish.catch.length_in} in)</p>
+      <p><strong>Weight:</strong> ${fish.catch.weight_g} g (${fish.catch.weight_lb} lb)</p>
   `;
 
-  // If hatchery fish, add release data
-  if (fish.origin.toLowerCase().includes("hatchery") && fish.release) {
+  // Hatchery-only release data
+  if (fish.origin === "Hatchery") {
     html += `
-      <hr>
-      <h3>Release Information</h3>
-
-      <p class="label">Release Date:</p>
-      <p>${fish.release.date}</p>
-
-      <p class="label">Release Location:</p>
-      <p>${fish.release.location}</p>
-
-      <p class="label">Release Size:</p>
-      <p>${fish.release.length_mm} mm (${fish.release.length_in} in)</p>
-
-      <p class="label">Release Weight:</p>
-      <p>${fish.release.weight_g} g (${fish.release.weight_lb} lbs)</p>
-
-      <p class="label">Tag Type:</p>
-      <p>${fish.release.tag_type}</p>
-
-      <img src="${fish.release.tag_image}" alt="Tag Image">
+      <h3>Release Data</h3>
+      <p><strong>Date Released:</strong> ${fish.release.date}</p>
+      <p><strong>Location:</strong> ${fish.release.location}</p>
+      <p><strong>Coordinates:</strong> ${fish.release.coords}</p>
+      <p><strong>Length:</strong> ${fish.release.length_mm} mm (${fish.release.length_in} in)</p>
+      <p><strong>Weight:</strong> ${fish.release.weight_g} g (${fish.release.weight_lb} lb)</p>
+      <p><strong>Tag Type:</strong> ${fish.release.tag_type}</p>
+      <img src="${fish.release.tag_image}" class="tag-img" />
     `;
   }
 
-  document.getElementById("result").innerHTML = html;
+  html += `</div>`;
+
+  result.innerHTML = html;
+
+  // Show bottom button
+  document.getElementById("castAgainButton").style.display = "block";
 }
