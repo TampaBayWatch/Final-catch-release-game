@@ -57,6 +57,3 @@ function castLine() {
 
   html += `</div>`;
   result.innerHTML = html;
-
-  document.getElementById("castAgainButton").style.display = "block";
-}
