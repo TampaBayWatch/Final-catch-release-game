@@ -1,87 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Catch & Release Game</title>
-
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catch & Release Game</title>
+  <style>
     body {
-        font-family: Arial, sans-serif;
-        background: #f0f7fa;
-        padding: 20px;
-        text-align: center;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #e4f2ff;
+      margin: 0;
+      padding: 20px;
     }
-
-    #fishCard {
-        display: none;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        background: white;
-        border-radius: 12px;
-        padding: 20px;
-        max-width: 750px;
-        margin: 0 auto;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    #game-box {
+      max-width: 600px;
+      background: white;
+      padding: 20px;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
-
     img {
-        max-width: 70%;
-        border-radius: 10px;
-        margin-top: 10px;
+      max-width: 90%;
+      margin-top: 10px;
+      border-radius: 8px;
     }
-
     button {
-        padding: 18px 40px;
-        font-size: 24px;
-        cursor: pointer;
-        background: #0077aa;
-        color: white;
-        border-radius: 10px;
-        border: none;
-        margin-top: 15px;
+      padding: 15px 25px;
+      font-size: 20px;
+      border: none;
+      background: #3a8ee6;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
     }
-
     button:hover {
-        background: #005c87;
+      background: #2a6fb8;
     }
-
-    #originLabel {
-        font-size: 22px;
-        font-weight: bold;
-        color: #0077aa;
-        margin-top: -5px;
+    .label {
+      font-weight: bold;
+      margin-top: 10px;
     }
-
-    #tagImage {
-        max-width: 200px;
-        margin-top: 10px;
-        display: none;
-    }
-</style>
+  </style>
 </head>
 
 <body>
+  <div id="game-box">
+    <h1>Catch & Release Game</h1>
+    <p>Tap below to see what fish you catch!</p>
 
-<h1 id="titleHeader">Catch & Release Game</h1>
+    <button onclick="castLine()">🎣 Cast a Line</button>
 
-<button id="castBtn">CAST A LINE</button>
+    <div id="result"></div>
+  </div>
 
-<div id="fishCard">
-    <h2 id="species"></h2>
-    <div id="originLabel"></div>
-
-    <img id="fishImage" src="" alt="Fish Image">
-
-    <p id="catchInfo"></p>
-    <p id="releaseInfo"></p>
-
-    <p id="tagTypeText" style="font-weight:bold; margin:10px 0;"></p>
-    <img id="tagImage" alt="Tag Image">
-
-    <button id="againBtn">CAST AGAIN</button>
-</div>
-
-<script src="catch.js?v=10"></script>
-
+  <script src="catch.js"></script>
 </body>
 </html>
