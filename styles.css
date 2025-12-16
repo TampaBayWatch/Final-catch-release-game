@@ -1,7 +1,9 @@
-/* GENERAL PAGE STYLING */
+/* ============================
+   GENERAL PAGE STYLING
+============================ */
 body {
   font-family: Arial, sans-serif;
-  background-color: #e6f1f3;
+  background-color: #FF216F82; /* Pink background */
   margin: 0;
   padding: 0;
   text-align: center;
@@ -11,10 +13,12 @@ body {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding-bottom: 140px;
+  padding-bottom: 120px; /* Prevent overlap with bottom button */
 }
 
-/* START SCREEN */
+/* ============================
+   START SCREEN
+============================ */
 #start-screen {
   margin-top: 80px;
 }
@@ -34,72 +38,80 @@ body {
   background-color: #176b78;
 }
 
-/* FISH CARD */
+/* ============================
+   FISH CARD DESIGN
+============================ */
 .fish-card {
-  background: white;
+  background: #FFDEDCCE; /* Cream card color */
   margin: 40px auto;
   padding: 25px;
   border-radius: 12px;
   max-width: 850px;
   text-align: left;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+.fish-card h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Fish Image */
 .fish-img {
   max-width: 80%;
   display: block;
   margin: 0 auto 20px auto;
 }
 
-/* TAG IMAGE – UNIFIED SIZE */
+/* Tag Image Consistent Size */
 .tag-img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
+  width: 140px;
+  height: auto;
   display: block;
-  margin: 15px auto;
+  margin: 15px 0;
 }
 
-/* SECTION TITLES */
+/* Section Titles (Catch Info, Release Info) */
 .section-title {
+  color: #0a6c74;
   font-size: 22px;
   font-weight: bold;
-  color: #0a6c74;
   margin-top: 25px;
+  padding-top: 10px;
+  border-top: 2px solid rgba(0,0,0,0.15);
 }
 
-/* TEXT */
-p {
+/* Labels */
+.label {
+  font-weight: bold;
   font-size: 18px;
-  line-height: 1.45;
-  margin: 10px 0;
 }
 
-hr {
-  border: none;
-  border-top: 2px solid #cbd4d6;
-  margin: 20px 0;
-}
-
-/* BOTTOM BUTTON (PERFECTLY CENTERED ALWAYS) */
+/* ============================
+   FIXED BOTTOM CAST BUTTON
+============================ */
 #bottomButtonWrapper {
-  display: none;               /* Hidden until JS turns it on */
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(255,255,255,0.97);
-  border-top: 2px solid #cbd4d6;
   padding: 15px 0;
-  text-align: center;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  background: rgba(255,255,255,0.95);
+  border-top: 2px solid #c9d4d6;
+
   z-index: 9999;
 }
 
-#bottomButtonWrapper.show {
-  display: block !important;
-}
-
 #castAgainButton {
-  font-size: 20px;
+  margin: 0 auto !important;
+  display: none; /* Hidden until after first cast */
   padding: 14px 32px;
+  font-size: 20px;
+  border-radius: 10px;
 }
