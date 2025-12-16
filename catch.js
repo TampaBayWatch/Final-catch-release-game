@@ -6,26 +6,24 @@ window.onload = async function () {
   fishData = await response.json();
 
   document.getElementById("startButton").addEventListener("click", castLine);
-  document.getElementById("castAgainButton").addEventListener("click", castLine);
 };
 
 function castLine() {
-
-  // FIRST CAST: hide start screen
+  // Hide start screen after first cast
   if (firstCast) {
     document.getElementById("start-screen").style.display = "none";
     firstCast = false;
   }
 
-  // Pick random fish
+  // Pick a random fish
   const fish = fishData[Math.floor(Math.random() * fishData.length)];
-
-  // Today = catch date
-  const today = new Date().toISOString().slice(0, 10);
-
   const result = document.getElementById("result");
   result.style.display = "block";
 
+  // Today's catch date
+  const today = new Date().toISOString().slice(0, 10);
+
+  // Build fish card HTML
   let html = `
     <div class="fish-card">
       <h2>You caught a ${fish.species}!</h2>
@@ -34,8 +32,6 @@ function castLine() {
 
       <p><strong>Origin:</strong> ${fish.origin}</p>
       <p><strong>Catch Date:</strong> ${today}</p>
-
-      <hr>
 
       <h3 class="section-title">CATCH INFORMATION</h3>
       <p><strong>Catch Location:</strong> ${fish.catch.location}</p>
@@ -46,8 +42,6 @@ function castLine() {
 
   if (fish.origin === "Hatchery") {
     html += `
-      <hr>
-
       <h3 class="section-title">RELEASE INFORMATION</h3>
       <p><strong>Release Date:</strong> ${fish.release.date}</p>
       <p><strong>Release Location:</strong> ${fish.release.location}</p>
@@ -59,9 +53,11 @@ function castLine() {
     `;
   }
 
-  html += `</div>`;
-  result.innerHTML = html;
+  // Add cast again button inside the card
+  html += `
+      <button class="cast-again-btn" onclick="castLine()">Cast Again</button>
+    </div>
+  `;
 
-  // SHOW BOTTOM BUTTON
-  document.getElementById("bottomButtonWrapper").classList.add("show");
+  result.innerHTML = html;
 }
