@@ -17,16 +17,20 @@
       <button id="startButton" class="main-btn">Cast a Line</button>
     </div>
 
-    <!-- RESULT -->
-    <div id="result" style="display:none;"></div>
+    <!-- FISH RESULT AREA -->
+    <div id="result" style="display: none;"></div>
 
   </div>
 
-  <!-- BOTTOM CAST BUTTON (hidden until JS shows it) -->
-  <div id="bottomButtonWrapper" class="hidden">
-    <button id="castAgainButton" class="main-btn">Cast a Line</button>
+  <!-- BOTTOM FIXED CAST BUTTON -->
+  <div id="bottomButtonWrapper">
+    <button id="castAgainButton" class="main-btn" style="display: none;">
+      Cast a Line
+    </button>
   </div>
 
-  <script src="catch.js"></script>
+  <!-- GAME LOGIC -->
+  <script src="catch.js?v=3"></script>
+
 </body>
 </html>
